@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technology Event Registration Form</title>
+</head>
+
+<body>
+
+    <form method="post">
+        <div>
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" name="Name" id="name" required>
+            </div>
+
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" name="Email" id="email" required>
+            </div>
+
+            <div>
+                <label for="phone">Phone:</label>
+                <input type="tel" name="Phone" id="phone">
+            </div>
+
+            <div>
+                <label for="age">Age:</label>
+                <input type="number" name="Age" id="age" min="15" max="100" required>
+            </div>
+
+            <div>
+                <label for="comments">Comments or suggestions</label>
+                <textarea name="Comments" id="comments"></textarea>
+            </div>
+
+            <div>
+                <fieldset>
+                    <legend>Area of interest </legend>
+                    <p>
+                        <input type="radio" name="area" id="area_1" value="Web Development">
+                        <label for="area_1">Web Development</label>
+                    </p>
+                    <p><input type="radio" name="area" id="area_2" value="Artificial Intelligence">
+                        <label for="area_2">Artificial Intelligence</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="area" id="area_3" value="Cybersecurity">
+                        <label for="area_3">Cybersecurity</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="area" id="area_4" value="UX/UI Design">
+                        <label for="area_4">UX/UI Design</label>
+                    </p>
+                </fieldset>
+            </div>
+        </div>
+        <div>
+            <input type="checkbox" name="subscribe" id="subscribe">
+            <label for="subscribe">I want to receive news by email</label>
+        </div>
+
+        <div>
+            <input type="submit" value="Submit">
+        </div>
+
+        <div>
+            <input type="reset" value="Reset">
+        </div>
+    </form>
+
+</body>
+
+</html>
